@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E32439B7-F5C0-405C-82D3-59D1C3B54B25}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>FitnessApp</RootNamespace>
+    <AssemblyName>FitnessApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Advance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Advance.Designer.cs">
+      <DependentUpon>Advance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="backwardLunge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="backwardLunge.Designer.cs">
+      <DependentUpon>backwardLunge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="beginner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="beginner.Designer.cs">
+      <DependentUpon>beginner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="childsPose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="childsPose.Designer.cs">
+      <DependentUpon>childsPose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cobraStretch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cobraStretch.Designer.cs">
+      <DependentUpon>cobraStretch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="donkeyKicksLeft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="donkeyKicksLeft.Designer.cs">
+      <DependentUpon>donkeyKicksLeft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="donkeyKicksRight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="donkeyKicksRight.Designer.cs">
+      <DependentUpon>donkeyKicksRight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="finish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="finish.Designer.cs">
+      <DependentUpon>finish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form10.Designer.cs">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form11.Designer.cs">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form12.Designer.cs">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form13.Designer.cs">
+      <DependentUpon>Form13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form14.Designer.cs">
+      <DependentUpon>Form14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form15.Designer.cs">
+      <DependentUpon>Form15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form16.Designer.cs">
+      <DependentUpon>Form16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form17.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form17.Designer.cs">
+      <DependentUpon>Form17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form9.Designer.cs">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inAndOuts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inAndOuts.Designer.cs">
+      <DependentUpon>inAndOuts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InclinePushUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InclinePushUp.Designer.cs">
+      <DependentUpon>InclinePushUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Intermidiate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Intermidiate.Designer.cs">
+      <DependentUpon>Intermidiate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JumpingJack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JumpingJack.Designer.cs">
+      <DependentUpon>JumpingJack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kneePushUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kneePushUp.Designer.cs">
+      <DependentUpon>kneePushUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kneeToChessStretchLeft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kneeToChessStretchLeft.Designer.cs">
+      <DependentUpon>kneeToChessStretchLeft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kneeToChestStretchRight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kneeToChestStretchRight.Designer.cs">
+      <DependentUpon>kneeToChestStretchRight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="leftSquadStretchWall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="leftSquadStretchWall.Designer.cs">
+      <DependentUpon>leftSquadStretchWall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mountainClimber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mountainClimber.Designer.cs">
+      <DependentUpon>mountainClimber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="plieSquats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="plieSquats.Designer.cs">
+      <DependentUpon>plieSquats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pushUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pushUp.Designer.cs">
+      <DependentUpon>pushUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rightSquadStretchWithWall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rightSquadStretchWithWall.Designer.cs">
+      <DependentUpon>rightSquadStretchWithWall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="russianTwist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="russianTwist.Designer.cs">
+      <DependentUpon>russianTwist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sideLyingLegLiftLeft.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sideLyingLegLiftLeft.Designer.cs">
+      <DependentUpon>sideLyingLegLiftLeft.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sideLyingLegLiftRight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sideLyingLegLiftRight.Designer.cs">
+      <DependentUpon>sideLyingLegLiftRight.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sitUpTwist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sitUpTwist.Designer.cs">
+      <DependentUpon>sitUpTwist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Squat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Squat.Designer.cs">
+      <DependentUpon>Squat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SupinePushUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SupinePushUp.Designer.cs">
+      <DependentUpon>SupinePushUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TricepsDips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TricepsDips.Designer.cs">
+      <DependentUpon>TricepsDips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wideArmPushUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wideArmPushUp.Designer.cs">
+      <DependentUpon>wideArmPushUp.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Advance.resx">
+      <DependentUpon>Advance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="backwardLunge.resx">
+      <DependentUpon>backwardLunge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="beginner.resx">
+      <DependentUpon>beginner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="childsPose.resx">
+      <DependentUpon>childsPose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cobraStretch.resx">
+      <DependentUpon>cobraStretch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="donkeyKicksLeft.resx">
+      <DependentUpon>donkeyKicksLeft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="donkeyKicksRight.resx">
+      <DependentUpon>donkeyKicksRight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="finish.resx">
+      <DependentUpon>finish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form10.resx">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form11.resx">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form12.resx">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form13.resx">
+      <DependentUpon>Form13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form14.resx">
+      <DependentUpon>Form14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form15.resx">
+      <DependentUpon>Form15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form16.resx">
+      <DependentUpon>Form16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form17.resx">
+      <DependentUpon>Form17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form9.resx">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inAndOuts.resx">
+      <DependentUpon>inAndOuts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InclinePushUp.resx">
+      <DependentUpon>InclinePushUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Intermidiate.resx">
+      <DependentUpon>Intermidiate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JumpingJack.resx">
+      <DependentUpon>JumpingJack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kneePushUp.resx">
+      <DependentUpon>kneePushUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kneeToChessStretchLeft.resx">
+      <DependentUpon>kneeToChessStretchLeft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kneeToChestStretchRight.resx">
+      <DependentUpon>kneeToChestStretchRight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="leftSquadStretchWall.resx">
+      <DependentUpon>leftSquadStretchWall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mountainClimber.resx">
+      <DependentUpon>mountainClimber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="plieSquats.resx">
+      <DependentUpon>plieSquats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="pushUp.resx">
+      <DependentUpon>pushUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rightSquadStretchWithWall.resx">
+      <DependentUpon>rightSquadStretchWithWall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="russianTwist.resx">
+      <DependentUpon>russianTwist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sideLyingLegLiftLeft.resx">
+      <DependentUpon>sideLyingLegLiftLeft.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sideLyingLegLiftRight.resx">
+      <DependentUpon>sideLyingLegLiftRight.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sitUpTwist.resx">
+      <DependentUpon>sitUpTwist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Squat.resx">
+      <DependentUpon>Squat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SupinePushUp.resx">
+      <DependentUpon>SupinePushUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TricepsDips.resx">
+      <DependentUpon>TricepsDips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wideArmPushUp.resx">
+      <DependentUpon>wideArmPushUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\119929885_269488517391983_4087088477110408374_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\126315402_196950138579657_2560153887676495776_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\127222249_129461688748957_3048809170217877463_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Untitled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\118019899_1247733265570894_5282202239563951177_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\126975049_412828013430462_7114185268908010237_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\126936040_684758845571750_2249190352658101394_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\logo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\logo4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\menubar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\menubar2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Untitled1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\JumpingJack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\inclinePushUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\kneePushUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\pushUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\wideArmPushUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\CobraStretch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\INnOuts.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\arrowBack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\backwardLunge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\MountainClimber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\plieSquats.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\russianTwist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\work outs\Childs pose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\work outs\Donkey Kicks Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\work outs\Donkey Kicks Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\work outs\Knee To CHest Stretch Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\work outs\Knee To CHest Stretch Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\work outs\Left Quad Stretch With Wall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\work outs\Right Quad Stretch With Wall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\work outs\Side Lying Leg Lift Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\work outs\Side Lying Leg Lift Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\work outs\SitUpTwist.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\work outs\Squat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\work outs\Supine Push Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\work outs\Triceps Dips.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
